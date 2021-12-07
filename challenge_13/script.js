@@ -65,6 +65,24 @@ console.log(team2);
 
 // printGoals A FAIRE
 
+function printGoals() {
+  // const nbPlayersToPick = Math.floor(Math.random() * allPlayers.length);
+  const nbPlayersToPick = 15;
+  let playersPicked = [];
+
+
+  while (playersPicked.length< nbPlayersToPick){
+    const playerIndexToPick = Math.floor(Math.random() * allPlayers.length);
+    if(!playersPicked.includes(allPlayers[playerIndexToPick])) {
+    playersPicked.push(allPlayers[nbPlayersToPick]);
+    }
+  }
+  console.log(playersPicked);
+  for (let i = 0; i < playersPicked.length; i++); {
+    
+  }
+}
+// 
 function winner() {
 if (game.odds.team1 < game.odds.team2) {
   console.log(
